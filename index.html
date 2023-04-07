@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Todo app</title>
+</head>
+<body>
+    <div class="backgrounds">
+        <div class="backgroundImage"></div>
+        <div class="backgroundColor"></div>
+    </div>
+    <main>
+        <header>
+            <span class="toDoText">TODO</span>
+            <button class="themeIcon"><img class="themeImage" src="images/icon-sun.svg" alt="iconLight"></button>
+        </header>
+        <input type="text" class="toDoInput" id="taskInput" placeholder="Create new todo...">
+        <button onclick="newElement()" class="addBtn">+</button>
+        <img class="imageEmpty"src="" alt="">
+       <ul>
+            <li id="li1" draggable="true">Complete online JavaScript course</li>
+            <li id="li2" draggable="true">Jog around the park 3x</li>
+            <li id="li3" draggable="true">10 minutes meditation</li>
+            <li id="li4" draggable="true">Read for 1 hour</li>
+            <li id="li5" draggable="true">Pick up groceries</li>
+            <li id="li6" draggable="true">Complete Todo App on FrontendMentor</li>
+       </ul>
+       <footer>
+            <div class="itemsLeft">
+                items left
+            </div>
+            <div class="filters">
+                <button class="button buttonAll">All</button> 
+                <button class="button buttonActive">Active </button>
+                <button class="button buttonCompleted">Completed</button>
+            </div>
+            <button class="button buttonClear">
+                Clear Completed
+            </button>
+       </footer>
+        <span class="dragNDrop">Drag and drop to reorder list</span>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
